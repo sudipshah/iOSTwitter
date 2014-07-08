@@ -20,7 +20,6 @@
 @property (strong, nonatomic) NSMutableArray * homeTimeline;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
 
-@property (strong, nonatomic) Tweet * currentTweet;
 
 - (void) loadHomeTimeLine;
 -(void) signOut;
@@ -104,11 +103,6 @@
     TweetCell * tweetCell = [self.tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
    
     tweetCell.tweet= self.homeTimeline[indexPath.row];
-    self.currentTweet = tweetCell.tweet;
-    
-    //[tweetCell.replyButton addTarget:self action:@selector(replyTweet) forControlEvents:UIControlEventTouchUpInside];
-    //[tweetCell.retweetButton addTarget:self action:@selector(reTweet) forControlEvents:UIControlEventTouchUpInside];
-    //[tweetCell.favoriteButton addTarget:self action:@selector(favoriteTweet) forControlEvents:UIControlEventTouchUpInside];
     
     return tweetCell;
     

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TweetsViewController">
+            <connections>
+                <outlet property="tableView" destination="Wl5-Gv-Xwa" id="1a9-3q-LXz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-Gv-Xwa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wl5-Gv-Xwa" secondAttribute="trailing" id="Au4-Ns-RSr"/>
+                <constraint firstItem="Wl5-Gv-Xwa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DDx-RL-ayW"/>
+                <constraint firstItem="Wl5-Gv-Xwa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PiK-f7-sYp"/>
+                <constraint firstItem="Wl5-Gv-Xwa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tht-vM-uZy"/>
+                <constraint firstAttribute="bottom" secondItem="Wl5-Gv-Xwa" secondAttribute="bottom" id="ad8-df-2QB"/>
+                <constraint firstItem="Wl5-Gv-Xwa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eYC-qQ-k24"/>
+                <constraint firstAttribute="bottom" secondItem="Wl5-Gv-Xwa" secondAttribute="bottom" id="ukl-nj-XaE"/>
+                <constraint firstAttribute="trailing" secondItem="Wl5-Gv-Xwa" secondAttribute="trailing" id="ywa-41-dRu"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
